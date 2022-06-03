@@ -3,7 +3,23 @@
 // Without static method and inside same class
 // Without static method and inside another class
 
+import java.util.Scanner;
+
 public class Method {
+//
+//    public static void factorialNumber(int n) {
+//
+//        int factorial = 1;
+//        for (int i = n; i >= 1; i--) {
+//            factorial = factorial * i;
+//        }
+//        System.out.println(factorial);
+//    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        factorialNumber(n);
+//    }
 
     //Use of static method
     static int add(int ...arr){     //(int ...arr)--> varArgs(variable argument)
