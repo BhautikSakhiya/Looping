@@ -12,8 +12,8 @@ public class OCA_ch1 extends Rocket{
         blastOff();
         new Rocket().blastOff();
     }
-//    private void blastOff(){
-//        System.out.println("sh-bang.");
-//    }
+    void blastOff(){
+        System.out.println("sh-bang.");
+    }
 
 }

@@ -1,9 +1,11 @@
 //Encapsulation --> Bind data with method
-
+//
 class Student{
 
 //    public  int rollNo;
 //    public String name;
+
+    //GETTER AND SETTER
     private int rollNo;
     private String name;
 
@@ -37,6 +39,8 @@ public class Encapsulation {
 //        new Student().setRollNo(1);           //1 ways to set and get values
 //        new Student().setName("Bhautik");
 
+
+        // USING GETTER AND SETTER
         Student s = new Student();
         s.setName("Bhautik");
         s.setRollNo(1);
