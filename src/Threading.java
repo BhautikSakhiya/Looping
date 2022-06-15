@@ -158,13 +158,16 @@ public class Threading {
 
         Thread t1 = new Thread(r1);
         Thread t2 = new Thread(r2);
-
+        t1.setPriority(10);
+        t2.setPriority(1);
+        System.out.println(t1.getPriority());
+        System.out.println(t2.getPriority());
         t1.start();
-        try {
-            Thread.sleep(50);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(50);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         t2.start();
     }
 }

@@ -1,7 +1,9 @@
+import java.util.Collections;
 import java.util.Scanner;
-
+import java.util.Arrays;
 
 public class Array {
+
     public static void main(String[] args) {
 
         // THRERE WAYS TO CRETE ARRAYS
@@ -88,20 +90,38 @@ public class Array {
 //        }
 //        System.out.println(max);
 
-        // SHORT ARRAY
-        int[] arr = {2,4,5,2,3,5,6,1,9};
-        int temp;
-//        boolean IsShorted = true;
-        for(int i = 0; i < arr.length-1; i++){
-            if(arr[i] > arr[i+1]){
-                temp = arr[i];
-                arr[i] = arr[i+1];
-                arr[i+1] = temp;
-            }
-        }
-        for (int e:arr) {
-            System.out.print(e + " ");
-        }
+
+
+        //REVERSE ARRAY USING METHOD
+        Integer[] arr = {1,54,3,54,6,88,3030,300,57};
+        Arrays.sort(arr, Collections.reverseOrder());
+        System.out.printf("%s",Arrays.toString(arr));
+
+
+//        // SHORT ARRAY
+//        int[] arr = {2, 4, 5, 2, 3, 5, 6, 1, 9};
+//        int temp = 0;
+////        boolean IsShorted = true;
+//        int i;
+//        for (i = 0; i < arr.length; i++) {
+//            for(int j = i + 1; j < arr.length; j++) {
+//                if (arr[i] > arr[j]) {
+//                    temp = arr[i];
+//                    arr[i] = arr[j];
+//                    arr[j] = temp;
+//                }
+//            }
+//            System.out.print(arr[i] + " ");
+//        }
+////        for (int e:arr) {
+////        System.out.print(e + " ");
+////        }
+
+
+//        // Custom input array shorting using sort() method.
+//        int[] arr = { 13, 7, 6, 45, 21, 9, 101, 102 };
+//        Arrays.sort(arr);
+//        System.out.printf("Modified arr[] : %s",Arrays.toString(arr));
 
 
     }
