@@ -16,9 +16,11 @@ public class CollectionDemo {
         values.add("Name");
         values.add(2.4);
 
-        for (Object i:values) {
-            System.out.println(i);
-        }
+        values.forEach(System.out::println);
+
+//        for (Object i:values) {
+//            System.out.println(i);
+//        }
 
 
         // IT SUPPORT ONLY INT DATA TYPE
